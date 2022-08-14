@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+  transition: transform 0.25s;
+  background-color: #ffffff;
+}
+
+body::before {
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  right: 18px;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  content: "";
+  transition: opacity;
+  opacity: 0;
+  background-color: #010101;
+}
+
+body .active {
+  overflow-y: hidden;
+  padding-right: 18px;
+  transition: transform 0.5s;
+  transform: translateX(-214px);
+}
+
+body .active::before {
+  z-index: 10;
+  height: 100%;
+  opacity: 0.85;
+}
+
+a {
+  transition: color 0.5s;
+  text-decoration: none;
+  color: #010101;
+  background-color: transparent;
+}
+h1 {
+  margin: 0.67em 0;
+  font-size: 2em;
+}
+
+hr {
+  overflow: visible;
+}
+
+b,
+strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+sub,
+sup {
+  position: relative;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
