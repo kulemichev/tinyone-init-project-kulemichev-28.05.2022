@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  margin: 0;
+  // margin: 0;
   overflow-x: hidden;
   width: 100%;
   transition: transform 0.25s;
@@ -17,22 +17,24 @@ body {
 body::before {
   position: absolute;
   z-index: -10;
-  top: 0;
-  right: 18px;
-  bottom: 0;
-  left: 0;
+  // top: 0;
+  // right: 18px;
+  // bottom: 0;
+  // left: 0;
   height: 0;
   content: "";
-  transition: opacity;
+  transition: opacity 1s;
   opacity: 0;
   background-color: #010101;
+  @include abs-position(0, 18px);
 }
 
 body .active {
   overflow-y: hidden;
   padding-right: 18px;
   transition: transform 0.5s;
-  transform: translateX(-214px);
+  // transform: translateX(-214px);
+  transform: translateX(-$navbar-mobile-width + 18px);
 }
 
 body .active::before {
@@ -45,41 +47,7 @@ a {
   transition: color 0.5s;
   text-decoration: none;
   color: #010101;
-  background-color: transparent;
-}
-h1 {
-  margin: 0.67em 0;
-  font-size: 2em;
-}
-
-hr {
-  overflow: visible;
-}
-
-b,
-strong {
-  font-weight: inherit;
-  font-weight: bolder;
-}
-
-sub,
-sup {
-  position: relative;
-  vertical-align: baseline;
-  font-size: 75%;
-  line-height: 0;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-img {
-  border-style: none;
+  // background-color: transparent;
 }
 
 .container {
@@ -88,3 +56,38 @@ img {
   padding-right: 20px;
   padding-left: 20px;
 }
+
+// h1 {
+//   margin: 0.67em 0;
+//   font-size: 2em;
+// }
+
+// hr {
+//   overflow: visible;
+// }
+
+// b,
+// strong {
+//   font-weight: inherit;
+//   font-weight: bolder;
+// }
+
+// sub,
+// sup {
+//   position: relative;
+//   vertical-align: baseline;
+//   font-size: 75%;
+//   line-height: 0;
+// }
+
+// sub {
+//   bottom: -0.25em;
+// }
+
+// sup {
+//   top: -0.5em;
+// }
+
+// img {
+//   border-style: none;
+// }
