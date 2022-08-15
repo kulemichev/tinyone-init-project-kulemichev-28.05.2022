@@ -1,0 +1,8 @@
+.feature {
+  display: grid;
+
+  column-gap: 20px;
+  grid-template-areas: "fic ftl" "fic fds";
+  grid-template-rows: minmax(30px, max-content) auto;
+  row-gap: 8px;
+}
