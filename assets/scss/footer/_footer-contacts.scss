@@ -1,0 +1,125 @@
+.footer-contacts__title {
+  color: #ffd700;
+  text-align: center;
+
+  font-size: 2rem;
+}
+
+.footer-contacts__description {
+  color: #898989;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.footer-contacts__form {
+  display: grid;
+
+  gap: 20px;
+}
+
+.footer-contacts__form-input {
+  padding: 16px 22px;
+}
+
+.footer-contacts__form-input::placeholder {
+  color: #898989;
+}
+
+.footer-contacts__form-button {
+  cursor: pointer;
+
+  background-color: #ffd700;
+
+  font-weight: 700;
+}
+
+.footer-contacts__form-input,
+.footer-contacts__form-button {
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.footer-contacts__socials {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-contacts__socials a {
+  margin: 0 15px;
+
+  color: #ffd700;
+
+  font-size: 2.75rem;
+}
+
+.footer-contacts__socials a:hover,
+.footer-contacts__socials a:focus {
+  color: #ffffff;
+}
+
+@media (min-width: 992px) {
+  .footer-contacts__title {
+    margin: 0 80px 14px;
+  }
+  .footer-contacts__description {
+    margin: 0 80px 86px;
+  }
+
+  .footer-contacts {
+    margin-bottom: 126px;
+  }
+  .footer-contacts__form {
+    margin: 0 100px 70px;
+
+    grid-template-columns: 1fr 127px;
+  }
+}
+
+@media (max-width: 991.8px) and (min-width: 768px) {
+  .footer-contacts__title {
+    margin: 0 60px 14px;
+  }
+  .footer-contacts__description {
+    margin: 0 60px 60px;
+  }
+  .footer-contacts {
+    margin-bottom: 80px;
+  }
+  .footer-contacts__form {
+    margin: 0 80px 40px;
+
+    grid-template-columns: 1fr 127px;
+  }
+}
+
+@media (max-width: 767.8px) {
+  .footer-contacts__title {
+    margin: 0 0 14px;
+  }
+  .footer-contacts__description {
+    margin: 0 0 40px;
+  }
+}
+
+@media (max-width: 767.8px) and (min-width: 576px) {
+  .footer-contacts {
+    margin-bottom: 60px;
+  }
+  .footer-contacts__form {
+    margin: 0 0 20px;
+
+    grid-template-columns: 1fr 127px;
+  }
+}
+
+@media (max-width: 575.8px) {
+  .footer-contacts {
+    margin-bottom: 40px;
+  }
+  .footer-contacts__form {
+    margin: 0 0 20px;
+  }
+}

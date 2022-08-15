@@ -6,3 +6,139 @@
   grid-template-rows: minmax(30px, max-content) auto;
   row-gap: 8px;
 }
+
+.feature__title {
+  margin: 0;
+
+  font-size: 1.375rem;
+
+  grid-area: ftl;
+}
+
+.feature__description {
+  margin: 0;
+
+  color: #898989;
+
+  line-height: 1.3;
+
+  grid-area: fds;
+}
+
+.feature__icon {
+  text-align: center;
+
+  grid-area: fic;
+}
+
+.feature__icon i {
+  font-size: 3.1rem;
+}
+
+.features__title {
+  text-align: center;
+
+  font-size: 2rem;
+}
+
+.features__description {
+  text-align: center;
+
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.features__description {
+  color: #313841;
+}
+
+.features__content {
+  display: grid;
+  column-gap: 40px;
+}
+
+@media (min-width: 576px) {
+  .feature {
+    grid-template-columns: 50px 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .features {
+    padding-top: 113px;
+    padding-bottom: 140px;
+  }
+  .features__title {
+    margin: 0 80px 14px;
+  }
+  .features__description {
+    margin: 0 80px 86px;
+  }
+  .features__content {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 60px;
+  }
+}
+
+@media (max-width: 991.8px) {
+  .features {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 991.8px) and (min-width: 576px) {
+  .features__content {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+  }
+}
+
+@media (max-width: 991.8px) and (min-width: 768px) {
+  .features__title {
+    margin: 0 60px 14px;
+  }
+  .features__description {
+    margin: 0 60px 60px;
+  }
+}
+
+@media (max-width: 767.8px) {
+  .features__title {
+    margin: 0 0 14px;
+  }
+  .features__description {
+    margin: 0 0 40px;
+  }
+}
+
+@media (max-width: 767.8px) and (min-width: 576px) {
+  .slide {
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+    grid-template-areas: "ttl img" "stl img" "dsc img" "brd img";
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-contacts {
+    margin-bottom: 60px;
+  }
+  .footer-contacts__form {
+    margin: 0 0 20px;
+
+    grid-template-columns: 1fr 127px;
+  }
+  .footer-block {
+    grid-template-columns: 300px repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575.8px) {
+  .features__content {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+  .feature {
+    grid-template-columns: 60px 1fr;
+  }
+}
