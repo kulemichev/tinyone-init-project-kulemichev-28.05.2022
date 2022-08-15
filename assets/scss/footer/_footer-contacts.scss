@@ -1,12 +1,12 @@
 .footer-contacts__title {
-  color: #ffd700;
+  color: $color-accent;
   text-align: center;
 
   font-size: 2rem;
 }
 
 .footer-contacts__description {
-  color: #898989;
+  color: $color-gray-light;
   text-align: center;
   font-size: 1.25rem;
   line-height: 1.2;
@@ -23,13 +23,13 @@
 }
 
 .footer-contacts__form-input::placeholder {
-  color: #898989;
+  color: $color-gray-light;
 }
 
 .footer-contacts__form-button {
   cursor: pointer;
 
-  background-color: #ffd700;
+  background-color: $color-accent;
 
   font-weight: 700;
 }
@@ -50,14 +50,14 @@
 .footer-contacts__socials a {
   margin: 0 15px;
 
-  color: #ffd700;
+  color: $color-accent;
 
   font-size: 2.75rem;
 }
 
 .footer-contacts__socials a:hover,
 .footer-contacts__socials a:focus {
-  color: #ffffff;
+  color: $color-light;
 }
 
 @media (min-width: 992px) {
