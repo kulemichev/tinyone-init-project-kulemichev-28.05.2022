@@ -1,13 +1,16 @@
 .footer-contacts__title {
-  color: $color-accent;
   text-align: center;
+
+  color: $color-accent;
 
   font-size: 2rem;
 }
 
 .footer-contacts__description {
-  color: $color-gray-light;
   text-align: center;
+
+  color: $color-gray-light;
+
   font-size: 1.25rem;
   line-height: 1.2;
 }
@@ -37,6 +40,7 @@
 .footer-contacts__form-input,
 .footer-contacts__form-button {
   height: 50px;
+
   border: none;
   border-radius: 4px;
   outline: none;
